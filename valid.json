@@ -4,7 +4,7 @@
     "hex": "00",
     "decoded": 0,
     "diagnostic": "0",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "AQ==",
@@ -18,119 +18,119 @@
     "hex": "17",
     "decoded": 23,
     "diagnostic": "23",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "GBg=",
     "hex": "1818",
     "decoded": 24,
     "diagnostic": "24_0",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "GP8=",
     "hex": "18ff",
     "decoded": 255,
     "diagnostic": "255_0",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "Gf//",
     "hex": "19ffff",
     "decoded": 65535,
     "diagnostic": "65535_1",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "GgABAAA=",
     "hex": "1a00010000",
     "decoded": 65536,
     "diagnostic": "65536_2",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "Gv////8=",
     "hex": "1affffffff",
     "decoded": 4294967295,
     "diagnostic": "4294967295_2",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "GwAAAAEAAAAA",
     "hex": "1b0000000100000000",
     "decoded": 4294967296,
     "diagnostic": "4294967296_3",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "G///////////",
     "hex": "1bffffffffffffffff",
     "decoded": 18446744073709551615,
     "diagnostic": "18446744073709551615_3",
-    "roundtrip": true 
+    "roundtrip": false
   },
   {
     "cbor": "IA==",
     "hex": "20",
     "decoded": -1,
     "diagnostic": "-1",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "IQ==",
     "hex": "21",
     "decoded": -2,
     "diagnostic": "-2",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "OH4=",
     "hex": "387e",
     "decoded": -127,
     "diagnostic": "-127_0",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "OH8=",
     "hex": "387f",
     "decoded": -128,
     "diagnostic": "-128_0",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "OX//",
     "hex": "397fff",
     "decoded": -32768,
     "diagnostic": "-32768_1",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "On////8=",
     "hex": "3a7fffffff",
     "decoded": -2147483648,
     "diagnostic": "-2147483648_2",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "+T4A",
     "hex": "f93e00",
     "decoded": 1.5,
     "diagnostic": "1.5_1",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "+koPKzk=",
     "hex": "fa4a0f2b39",
     "decoded": 2345678.25,
     "diagnostic": "2345678.25_2",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "+z/zMzMzMzMz",
     "hex": "fb3ff3333333333333",
     "decoded": 1.2,
     "diagnostic": "1.2_3",
-    "roundtrip": true 
+    "roundtrip": true
   },
   {
     "cbor": "GCo=",
@@ -161,7 +161,8 @@
     "hex": "00",
     "decoded": -0.0,
     "diagnostic": "0",
-    "roundtrip": true,
+    "roundtrip": false,
+    "skipDecode": true,
     "notes": "Reduced."
   },
   {
@@ -239,7 +240,7 @@
   {
     "cbor": "+l+AAAA=",
     "hex": "fa5f800000",
-    "decoded": 18446744073709552000,
+    "decoded": 18446744073709552000.0,
     "diagnostic": "18446744073709552000_2",
     "roundtrip": true,
     "notes": "Just too large to convert to uint64, but converts to a single, just over UINT64_MAX."

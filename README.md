@@ -14,6 +14,7 @@ interface Valid {
   decoded?: unknown,   // For tests that can be expressed as JSON.
   diagnostic: string,  // CBOR diagnostic notation
   roundtrip?: boolean, // If true, encode(decode(hex)) = hex
+  skipDecode?: boolean, // If true, don't decode the hex to get decoded.
   notes?: string,      // Why this test is interesting, if provided
 }
 
@@ -24,9 +25,10 @@ To fully check each of these vectors, perform the following operations:
 
 - Ensure that `Base64Decode(cbor) = HexDecode(cbor)` (optional)
 - dCBOR decode either `cbor` or `hex`.
-  - If `decoded` is provided, ensure the result matches `decoded`.
-  - If `roundtrip` is true, ensure that dCBOR encoding the result matches
-    the original binary data
+  - If `decoded` is provided, and `skipDecode` is not true, ensure the result
+    matches `decoded`.
+  - If `roundtrip` is true, ensure that dCBOR encoding the result matches the
+    original binary data
 - Decode either `cbor` or `hex` to diagnostic format in dCBOR mode.
   - Ensure the result matches `diagnostic`
 - No errors should fire for any of these inputs.

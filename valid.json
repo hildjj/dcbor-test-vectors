@@ -1,0 +1,300 @@
+[
+  {
+    "cbor": "AA==",
+    "hex": "00",
+    "decoded": 0,
+    "diagnostic": "0",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "AQ==",
+    "hex": "01",
+    "decoded": 1,
+    "diagnostic": "1",
+    "roundtrip": true
+  },
+  {
+    "cbor": "Fw==",
+    "hex": "17",
+    "decoded": 23,
+    "diagnostic": "23",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "GBg=",
+    "hex": "1818",
+    "decoded": 24,
+    "diagnostic": "24_0",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "GP8=",
+    "hex": "18ff",
+    "decoded": 255,
+    "diagnostic": "255_0",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "Gf//",
+    "hex": "19ffff",
+    "decoded": 65535,
+    "diagnostic": "65535_1",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "GgABAAA=",
+    "hex": "1a00010000",
+    "decoded": 65536,
+    "diagnostic": "65536_2",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "Gv////8=",
+    "hex": "1affffffff",
+    "decoded": 4294967295,
+    "diagnostic": "4294967295_2",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "GwAAAAEAAAAA",
+    "hex": "1b0000000100000000",
+    "decoded": 4294967296,
+    "diagnostic": "4294967296_3",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "G///////////",
+    "hex": "1bffffffffffffffff",
+    "decoded": 18446744073709551615,
+    "diagnostic": "18446744073709551615_3",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "IA==",
+    "hex": "20",
+    "decoded": -1,
+    "diagnostic": "-1",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "IQ==",
+    "hex": "21",
+    "decoded": -2,
+    "diagnostic": "-2",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "OH4=",
+    "hex": "387e",
+    "decoded": -127,
+    "diagnostic": "-127_0",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "OH8=",
+    "hex": "387f",
+    "decoded": -128,
+    "diagnostic": "-128_0",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "OX//",
+    "hex": "397fff",
+    "decoded": -32768,
+    "diagnostic": "-32768_1",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "On////8=",
+    "hex": "3a7fffffff",
+    "decoded": -2147483648,
+    "diagnostic": "-2147483648_2",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "+T4A",
+    "hex": "f93e00",
+    "decoded": 1.5,
+    "diagnostic": "1.5_1",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "+koPKzk=",
+    "hex": "fa4a0f2b39",
+    "decoded": 2345678.25,
+    "diagnostic": "2345678.25_2",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "+z/zMzMzMzMz",
+    "hex": "fb3ff3333333333333",
+    "decoded": 1.2,
+    "diagnostic": "1.2_3",
+    "roundtrip": true 
+  },
+  {
+    "cbor": "GCo=",
+    "hex": "182a",
+    "decoded": 42.0,
+    "diagnostic": "42_0",
+    "roundtrip": true,
+    "notes": "Reduced."
+  },
+  {
+    "cbor": "GgAjys4=",
+    "hex": "1a0023cace",
+    "decoded": 2345678.0,
+    "diagnostic": "2345678_2",
+    "roundtrip": true,
+    "notes": "Reduced."
+  },
+  {
+    "cbor": "OgAjys0=",
+    "hex": "3a0023cacd",
+    "decoded": -2345678.0,
+    "diagnostic": "-2345678_2",
+    "roundtrip": true,
+    "notes": "Reduced."
+  },
+  {
+    "cbor": "AA==",
+    "hex": "00",
+    "decoded": -0.0,
+    "diagnostic": "0",
+    "roundtrip": true,
+    "notes": "Reduced."
+  },
+  {
+    "cbor": "+QAB",
+    "hex": "f90001",
+    "decoded": 5.960464477539063e-08,
+    "diagnostic": "5.960464477539063e-8_1",
+    "roundtrip": true,
+    "notes": "Smallest half-precision subnormal."
+  },
+  {
+    "cbor": "+gAAAAE=",
+    "hex": "fa00000001",
+    "decoded": 1.401298464324817e-45,
+    "diagnostic": "1.401298464324817e-45_2",
+    "roundtrip": true,
+    "notes": "Smallest single subnormal."
+  },
+  {
+    "cbor": "+wAAAAAAAAAB",
+    "hex": "fb0000000000000001",
+    "decoded": 5e-324,
+    "diagnostic": "5e-324_3",
+    "roundtrip": true,
+    "notes": "Smallest double subnormal."
+  },
+  {
+    "cbor": "+wAQAAAAAAAA",
+    "hex": "fb0010000000000000",
+    "decoded": 2.2250738585072014e-308,
+    "diagnostic": "2.2250738585072014e-308_3",
+    "roundtrip": true,
+    "notes": "Smallest double normal."
+  },
+  {
+    "cbor": "+QQA",
+    "hex": "f90400",
+    "decoded": 6.103515625e-05,
+    "diagnostic": "0.00006103515625_1",
+    "roundtrip": true,
+    "notes": "Smallest half-precision normal."
+  },
+  {
+    "cbor": "Gf/g",
+    "hex": "19ffe0",
+    "decoded": 65504.0,
+    "diagnostic": "65504_1",
+    "roundtrip": true,
+    "notes": "Reduced.  Largest possible half-precision."
+  },
+  {
+    "cbor": "GgH///4=",
+    "hex": "1a01fffffe",
+    "decoded": 33554430.0,
+    "diagnostic": "33554430_2",
+    "roundtrip": true,
+    "notes": "Reduced. Exponent 24 to test single exponent boundary."
+  },
+  {
+    "cbor": "O3////////v/",
+    "hex": "3b7ffffffffffffbff",
+    "decoded": -9223372036854774784.0,
+    "diagnostic": "-9223372036854774784_3",
+    "roundtrip": true,
+    "notes": "Reduced.  Most negative double that converts to int64."
+  },
+  {
+    "cbor": "G/////////gA",
+    "hex": "1bfffffffffffff800",
+    "decoded": 18446744073709550000.0,
+    "diagnostic": "18446744073709549568_3",
+    "roundtrip": true,
+    "notes": "Reduced.  Largest double that can convert to uint64, almost UINT64_MAX."
+  },
+  {
+    "cbor": "+l+AAAA=",
+    "hex": "fa5f800000",
+    "decoded": 18446744073709552000,
+    "diagnostic": "18446744073709552000_2",
+    "roundtrip": true,
+    "notes": "Just too large to convert to uint64, but converts to a single, just over UINT64_MAX."
+  },
+  {
+    "cbor": "+t9///8=",
+    "hex": "fadf7fffff",
+    "decoded": -18446742974197924000.0,
+    "diagnostic": "-18446742974197924000_2",
+    "roundtrip": true,
+    "notes": "Large negative that converts to float, but too large for int64."
+  },
+  {
+    "cbor": "+n9///8=",
+    "hex": "fa7f7fffff",
+    "decoded": 3.4028234663852886e+38,
+    "diagnostic": "3.4028234663852886e+38_2",
+    "roundtrip": true,
+    "notes": "Largest possible single."
+  },
+  {
+    "cbor": "+0fv///gAAAB",
+    "hex": "fb47efffffe0000001",
+    "decoded": 3.402823466385289e+38,
+    "diagnostic": "3.402823466385289e+38_3",
+    "roundtrip": true,
+    "notes": "Slightly larger than largest possible single."
+  },
+  {
+    "cbor": "+3/v////////",
+    "hex": "fb7fefffffffffffff",
+    "decoded": 1.7976931348623157e+308,
+    "diagnostic": "1.7976931348623157e+308_3",
+    "roundtrip": true,
+    "notes": "Largest double."
+  },
+  {
+    "cbor": "+XwA",
+    "hex": "f97c00",
+    "diagnostic": "Infinity_1",
+    "roundtrip": true,
+    "notes": "Canonicalized."
+  },
+  {
+    "cbor": "+fwA",
+    "hex": "f9fc00",
+    "diagnostic": "-Infinity_1",
+    "roundtrip": true,
+    "notes": "Canonicalized."
+  },
+  {
+    "cbor": "+X4A",
+    "hex": "f97e00",
+    "diagnostic": "NaN_1",
+    "roundtrip": true,
+    "notes": "Canonicalized."
+  }
+]

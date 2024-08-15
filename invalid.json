@@ -1,57 +1,191 @@
 [
   {
-    "value": "12.0",
+    "diagnostic": "12_1",
     "hex": "f94a00",
     "notes": "Can be reduced to 12."
   },
   {
-    "value": "1.5",
+    "diagnostic": "12_2",
+    "hex": "fa41400000",
+    "nodes": "Cab be reduced to 12."
+  },
+  {
+    "diagnostic": "12_3",
+    "hex": "fb4028000000000000",
+    "notes": "Can be reduced to 10."
+  },
+  {
+    "diagnostic": "12_0",
+    "hex": "180c",
+    "notes": "Not preferred encoding."
+  },
+  {
+    "diagnostic": "12_1",
+    "hex": "19000c",
+    "notes": "Not preferred encoding."
+  },
+  {
+    "diagnostic": "12_2",
+    "hex": "1a0000000c",
+    "notes": "Not preferred encoding."
+  },
+  {
+    "diagnostic": "12_3",
+    "hex": "1b000000000000000c",
+    "notes": "Not preferred encoding."
+  },
+  {
+    "diagnostic": "1.5_2",
+    "hex": "fa3fc00000",
+    "notes": "Not preferred encoding."
+  },
+  {
+    "diagnostic": "1.5_3",
     "hex": "fb3ff8000000000000",
     "notes": "Not preferred encoding."
   },
   {
-    "value": "-9223372036854775809",
+    "diagnostic": "-9223372036854775809_3",
     "hex": "3b8000000000000000",
     "notes": "65-bit negative integer value."
   },
   {
-    "value": "-18446744073709551616",
+    "diagnostic": "-18446744073709551616_3",
     "hex": "3bffffffffffffffff",
     "notes": "65-bit negative integer value."
   },
   {
-    "value": "Infinity",
+    "diagnostic": "Infinity_3",
     "hex": "fb7ff0000000000000",
     "notes": "Not preferred encoding."
   },
   {
-    "value": "Infinity",
+    "diagnostic": "Infinity_2",
     "hex": "fa7f800000",
     "notes": "Not preferred encoding."
   },
   {
-    "value": "-Infinity",
+    "diagnostic": "-Infinity_3",
     "hex": "fbfff0000000000000",
     "notes": "Not preferred encoding."
   },
   {
-    "value": "-Infinity",
+    "diagnostic": "-Infinity_2",
     "hex": "faff800000",
     "notes": "Not preferred encoding."
   },
   {
-    "value": "NaN",
+    "diagnostic": "NaN_3",
     "hex": "fb7ff9100000000001",
     "notes": "Not canonical NaN."
   },
   {
-    "value": "NaN",
+    "diagnostic": "NaN_2",
     "hex": "faffc00001",
     "notes": "Not canonical NaN."
   },
   {
-    "value": "NaN",
+    "diagnostic": "NaN_1",
     "hex": "f97e01",
     "notes": "Not canonical NaN."
+  },
+  {
+    "diagnostic": "{\"a\": 1, \"a\": 2}",
+    "hex": "a2616101616102",
+    "notes": "Duplicate string key."
+  },
+  {
+    "diagnostic": "{0: 1, 0: 2}",
+    "hex": "a200010002",
+    "notes": "Duplicate integer key."
+  },
+  {
+    "diagnostic": "{-10: 0, -10: 1}",
+    "hex": "a229002901",
+    "notes": "Duplicate negative integer key."
+  },
+  {
+    "diagnostic": "{true: false, true: null}",
+    "hex": "a2f5f4f5f6",
+    "notes": "Duplicate boolean key."
+  },
+  {
+    "diagnostic": "{[]: 0, []: 1}",
+    "hex": "a280008001",
+    "notes": "Duplicate key: empty array.",
+    "roundtrip": true
+  },
+  {
+    "diagnostic": "{[0]: 0, [0]: 1}",
+    "hex": "a2810000810001",
+    "notes": "Duplicate key: equal arrays.",
+    "roundtrip": true
+  },
+  {
+    "diagnostic": "{\"b\": 0, \"a\": 1}",
+    "hex": "a2616200616101",
+    "notes": "Keys out of order"
+  },
+  {
+    "diagnostic": "-0_1",
+    "hex": "f98000",
+    "notes": "Can be reduced to 0."
+  },
+  {
+    "diagnostic": "-0_2",
+    "hex": "fa80000000",
+    "notes": "Can be reduced to 0."
+  },
+  {
+    "diagnostic": "-0_3",
+    "hex": "fb8000000000000000",
+    "notes": "Can be reduced to 0."
+  },
+  {
+    "diagnostic": "2(h'02')",
+    "hex": "c24102",
+    "notes": "Bigint not preferred encoding."
+  },
+  {
+    "diagnostic": "2(h'00010000000000000001')",
+    "hex": "c24a00010000000000000001",
+    "notes": "Bigint encoded with leading zeros.  Not preferred encoding."
+  },
+  {
+    "diagnostic": "''_",
+    "hex": "5fff",
+    "notes": "Streaming disallowed: bytes."
+  },
+  {
+    "diagnostic": "\"\"_",
+    "hex": "7fff",
+    "notes": "Streaming disallowed: string."
+  },
+  {
+    "diagnostic": "[_ ]",
+    "hex": "9fff",
+    "notes": "Streaming disallowed: array."
+  },
+  {
+    "diagnostic": "{_ }",
+    "hex": "bfff",
+    "notes": "Streaming disallowed: object."
+  },
+  {
+    "diagnostic": "simple(0)",
+    "hex": "e0",
+    "notes": "Unsupported simple value.",
+    "roundtrip": true
+  },
+  {
+    "diagnostic": "undefined",
+    "hex": "f7",
+    "notes": "Unsupported simple value.",
+    "roundtrip": true
+  },
+  {
+    "diagnostic": "\"E\u0308\"",
+    "hex": "6345cc88",
+    "notes": "String not normalized with NFC."
   }
 ]

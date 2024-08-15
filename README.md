@@ -39,9 +39,10 @@ Invalid tests are in the form:
 
 ```ts
 interface Invalid {
-  value: string,       // For reference only
+  diagnostic: string,  // CBOR diagnostic notation, for reference only
   hex: string,         // Hex-encoded binary dCBOR input
   notes?: string,      // Why this test is interesting, if provided
+  roundtrip?: boolean, // Try encoding also if true
 }
 
 export type InvalidDcborTests = Invalid[];
@@ -49,7 +50,11 @@ export type InvalidDcborTests = Invalid[];
 
 To check each of these vectors:
 
-- dCBOR decode `hex`.
+- Decode `hex` using dCBOR rules.
+  - Ensure that an error was reported
+- If `roundtrip` is true
+  - Decode `hex` using permissive (NOT dCBOR!) rules
+  - Encode the result using dCBOR rules
   - Ensure that an error was reported
 
 ## Provenance

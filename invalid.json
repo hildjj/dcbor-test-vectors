@@ -1,16 +1,16 @@
 [
   {
-    "diagnostic": "12_1",
+    "diagnostic": "12.0",
     "hex": "f94a00",
     "notes": "Can be reduced to 12."
   },
   {
-    "diagnostic": "12_2",
+    "diagnostic": "12.0_2",
     "hex": "fa41400000",
     "nodes": "Cab be reduced to 12."
   },
   {
-    "diagnostic": "12_3",
+    "diagnostic": "12.0_3",
     "hex": "fb4028000000000000",
     "notes": "Can be reduced to 10."
   },
@@ -45,12 +45,12 @@
     "notes": "Not preferred encoding."
   },
   {
-    "diagnostic": "-9223372036854775809_3",
+    "diagnostic": "-9223372036854775809",
     "hex": "3b8000000000000000",
     "notes": "65-bit negative integer value."
   },
   {
-    "diagnostic": "-18446744073709551616_3",
+    "diagnostic": "-18446744073709551616",
     "hex": "3bffffffffffffffff",
     "notes": "65-bit negative integer value."
   },
@@ -85,7 +85,7 @@
     "notes": "Not canonical NaN."
   },
   {
-    "diagnostic": "NaN_1",
+    "diagnostic": "NaN",
     "hex": "f97e01",
     "notes": "Not canonical NaN."
   },
@@ -127,17 +127,17 @@
     "notes": "Keys out of order"
   },
   {
-    "diagnostic": "-0_1",
+    "diagnostic": "-0.0",
     "hex": "f98000",
     "notes": "Can be reduced to 0."
   },
   {
-    "diagnostic": "-0_2",
+    "diagnostic": "-0.0_2",
     "hex": "fa80000000",
     "notes": "Can be reduced to 0."
   },
   {
-    "diagnostic": "-0_3",
+    "diagnostic": "-0.0_3",
     "hex": "fb8000000000000000",
     "notes": "Can be reduced to 0."
   },

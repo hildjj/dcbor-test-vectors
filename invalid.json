@@ -113,13 +113,13 @@
     "diagnostic": "{[]: 0, []: 1}",
     "hex": "a280008001",
     "notes": "Duplicate key: empty array.",
-    "roundtrip": true
+    "roundtrip": false
   },
   {
     "diagnostic": "{[0]: 0, [0]: 1}",
     "hex": "a2810000810001",
     "notes": "Duplicate key: equal arrays.",
-    "roundtrip": true
+    "roundtrip": false
   },
   {
     "diagnostic": "{\"b\": 0, \"a\": 1}",
